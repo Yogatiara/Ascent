@@ -1,0 +1,8 @@
+#navigation-list {
+  height: 0px;
+  transition: height 0.5s;
+}
+
+#navigation-list.fade-down {
+  height: 140px;
+}

@@ -1,6 +1,8 @@
 import "aos/dist/aos.css";
+import { CiMenuFries } from "react-icons/ci";
+import { IoIosClose } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar = ({ setDropDown, dropDown }) => {
   const handleClick = () => {
     const whatsappLink = "http://wa.me/+6282266951933?text=Halo mimin ascent ";
     window.location.href = whatsappLink;
@@ -8,18 +10,15 @@ const Navbar = () => {
   return (
     <>
       <nav
-        data-aos="fade-down"
-        className=" z-20 top-0 start-0 max-w-screen flex flex-wrap items-center justify-between mr-16 ml-16 p-4 "
+        // data-aos="fade-down"
+        className=" z-20 top-0 start-0 max-w-screen py-4 flex flex-wrap items-center justify-between mx-2 p-3 "
       >
-        <a href="" className="flex items-center space-x-0.5 ">
-          <img src="./Logo_3.png" className="h-20" alt="TrashIN Logo" />
-
-          <span className=" whitespace-nowrap  font-black mt-3">
-            <img src="./images/rashIn.png" alt="" />
-          </span>
+        <a href="" className="flex items-center space-x-1 ">
+          <img src="./Logo_2.png" className="h-10" alt="TrashIN Logo" />
+          {/* <h1 className="text-xl font-bold text-[#0092A4]">Ascent</h1> */}
         </a>
 
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse  p-1 ">
+        {/* <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse  p-1 ">
           <button
             type="button"
             onClick={handleClick}
@@ -32,8 +31,18 @@ const Navbar = () => {
               <img className="w-6" src="../icons/whatsapp.png" alt="" />
             </div>
           </button>
-        </div>
+        </div> */}
+        {dropDown ? (
+          <button onClick={() => setDropDown(false)}>
+            <IoIosClose className="w-6 h-6 text-gray-500 " />
+          </button>
+        ) : (
+          <button type="button" onClick={() => setDropDown(true)}>
+            <CiMenuFries className="w-5 h-5 " />
+          </button>
+        )}
 
+        {/* 
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
           id="navbar-sticky"
@@ -60,11 +69,11 @@ const Navbar = () => {
                 href="#contact"
                 className="block py-2 px-3 text-white rounded hover:text-gray-300 md:hover:bg-transparent  md:p-0  "
               >
-                Kontak
+                FAQ
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </nav>
     </>
   );
