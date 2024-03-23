@@ -7,7 +7,7 @@ const Banner = ({ toggleModal }) => {
   return (
     <>
       <div className="relative w-screen h-screen">
-        <div className="absolute z-10 py-32 space-y-3  flex flex-col gap-4 px-4  ">
+        <div className="absolute z-10 pt-8 space-y-3  flex flex-col gap-4 px-4  ">
           <div>
             <strong className="  text-white text-5xl font-bold ">Ascent</strong>
             <p className="text-left text-white text-base pt-3 font-normal ">
@@ -18,7 +18,9 @@ const Banner = ({ toggleModal }) => {
               </span>
             </p>
           </div>
-          <div className="items-center">
+          <div>
+            <DownloadButton />
+           <div className="items-center pt-4">
             <div className="relative inline-flex">
               <button
                 onClick={toggleModal}

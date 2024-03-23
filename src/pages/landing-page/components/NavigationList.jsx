@@ -1,6 +1,10 @@
-const NavigationList = () => {
+// eslint-disable-next-line react/prop-types
+const NavigationList = ({ setDropDown }) => {
   return (
-    <ul className="flex flex-col p-2     text-base navigation-list  ">
+    <ul
+      onClick={() => setDropDown(false)}
+      className="flex flex-col p-2     text-base navigation-list  "
+    >
       <li>
         <a
           href="#aboutUs"

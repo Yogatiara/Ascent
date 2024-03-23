@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .slider-wrapper {
+  width: calc(100% + 30px);
+  padding: 0 15px;
+  margin-left: -15px;
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-slide .drop-shadow {
+  box-shadow: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.slick-slide.slick-active .drop-shadow {
+  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
+} */
