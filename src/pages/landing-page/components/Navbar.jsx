@@ -1,20 +1,42 @@
+import { useEffect, useState } from "react";
+
 import "aos/dist/aos.css";
 import { CiMenuFries } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
+import NavigationList from "./NavigationList";
+import DownloadButton from "./DownloadButton";
 
 const Navbar = ({ setDropDown, dropDown }) => {
-  const handleClick = () => {
-    const whatsappLink = "http://wa.me/+6282266951933?text=Halo mimin ascent ";
-    window.location.href = whatsappLink;
-  };
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  // const handleClick = () => {
+  //   const whatsappLink = "http://wa.me/+6282266951933?text=Halo mimin ascent ";
+  //   window.location.href = whatsappLink;
+  // };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <nav
         // data-aos="fade-down"
-        className=" z-20 top-0 start-0 max-w-screen py-4 flex flex-wrap items-center justify-between mx-2 p-3 "
+        className="start-0 top-0 z-10 flex w-screen  flex-wrap items-center justify-between p-3 px-5 py-4 min-[600px]:absolute"
       >
-        <a href="" className="flex items-center space-x-1 ">
-          <img src="./Logo_2.png" className="h-10" alt="TrashIN Logo" />
+        <a
+          href=""
+          className="min-[600px]:h-13 min-[600px]:w-13 flex h-10 w-10  items-center  space-x-1  min-[425px]:h-14 min-[425px]:w-14"
+        >
+          <img src="./Logo_2.png" className="" alt="TrashIN Logo" />
           {/* <h1 className="text-xl font-bold text-[#0092A4]">Ascent</h1> */}
         </a>
 
@@ -32,48 +54,27 @@ const Navbar = ({ setDropDown, dropDown }) => {
             </div>
           </button>
         </div> */}
-        {dropDown ? (
+
+        {/* {} */}
+
+        {isLargeScreen ? (
+          <>
+            <div>
+              <NavigationList />
+            </div>
+            <div>
+              <DownloadButton scale={"sm"} />
+            </div>
+          </>
+        ) : dropDown ? (
           <button onClick={() => setDropDown(false)}>
-            <IoIosClose className="w-6 h-6 text-gray-500 " />
+            <IoIosClose className="h-6 w-6 text-gray-500 " />
           </button>
         ) : (
           <button type="button" onClick={() => setDropDown(true)}>
-            <CiMenuFries className="w-5 h-5 " />
+            <CiMenuFries className="h-5 w-5 " />
           </button>
         )}
-
-        {/* 
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-2  mt-4 font-bold text-xl opacity-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
-            <li>
-              <a
-                href="#aboutUs"
-                className="block py-2 px-3 text-white rounded  hover:text-gray-300 md:hover:bg-transparent md:p-0  "
-              >
-                Tentang kami
-              </a>
-            </li>
-            <li>
-              <a
-                href="#service"
-                className="block py-2 px-3 text-white rounded hover:text-gray-300 md:hover:bg-transparent md:p-0  "
-              >
-                Layanan
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="block py-2 px-3 text-white rounded hover:text-gray-300 md:hover:bg-transparent  md:p-0  "
-              >
-                FAQ
-              </a>
-            </li>
-          </ul>
-        </div> */}
       </nav>
     </>
   );

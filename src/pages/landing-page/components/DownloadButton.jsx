@@ -1,6 +1,8 @@
-const DownloadButton = () => {
+const DownloadButton = ({ scale }) => {
   return (
-    <button className="bg-[#0092A4] rounded-lg p-2 text-sm shadow-xl text-white">
+    <button
+      className={`rounded-lg bg-[#0092A4] p-2 text-${scale} text-white `}
+    >
       Unduh sekarang
     </button>
   );

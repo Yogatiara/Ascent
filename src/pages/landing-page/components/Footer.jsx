@@ -1,45 +1,47 @@
-import DownloadButton from "./DownloadButton";
-
 const Footer = () => {
   return (
     <>
       {/* <div></div> */}
-      <footer className=" max-w-screen flex flex-wrap justify-between w-full pl-20 pr-20 bg-[#004E64] p-10 ">
+      <footer className=" max-w-screen flex w-full flex-col justify-between gap-4 bg-[#0092A4] p-3 min-[700px]:flex-row">
         <div>
-          <a href="" className="flex items-center space-x-0.5 ">
-            <img src="./Logo_3.png" className="w-40" alt="TrashIN Logo" />
-          </a>
+          <p className=" text-sm font-thin text-white min-[365px]:text-base min-[425px]:text-base">
+            © 2023-2024 Ascent team. All Rights Reserved.
+          </p>
         </div>
-
-        <div className="mt-5 mr-20">
-          <DownloadButton />
-          <div>
-            <p className="text-white text-xl pt-8 font-thin font-montserrat">
-              © 2023 Ascent team. All Rights Reserved.
-            </p>
+        <div className=" flex flex-col gap-3 text-sm font-thin text-white min-[425px]:text-base min-[700px]:text-sm">
+          <div className="border-b pb-2">
+            <p>Ikuti kami dan dapatkan info menarik!</p>
           </div>
-        </div>
-
-        <div className="font-montserrat text-white">
-          <h6 className="font-medium text-lg">CONTACT</h6>
-          <div className="flex items-center space-x-3 mt-4">
-            <img className="w-6" src="./icons/telephone.png" alt="" />
-            <div>
-              <p>+62 822 6695 1933</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-3 mt-3">
-            <img className="w-6" src="./icons/phone.png" alt="" />
-            <div>
-              <p>Whatsapp</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-3 mt-3">
-            <img className="w-6" src="./icons/email.png" alt="" />
-            <div>
-              <p>ascentproduction8@gmail.com</p>
-            </div>
-          </div>
+          <ul className="flex items-center gap-2">
+            <li>
+              <img
+                className="w-5  min-[425px]:w-6"
+                src="./icons/facebook.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                className="w-5 min-[425px]:w-6"
+                src="./icons/instagram.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                className="w-5 min-[425px]:w-6"
+                src="./icons/twitter.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                className="w-5 min-[425px]:w-6"
+                src="./icons/whatsapp.png"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </footer>
     </>

@@ -13,7 +13,34 @@ const CourseTopicCard = ({ categoryData }) => {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: "25px",
+    // centerPadding: "100px",
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 471,
+        settings: {
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          centerPadding: "90px",
+        },
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          centerPadding: "71px",
+        },
+      },
+      {
+        breakpoint: 321,
+        settings: {
+          centerPadding: "43px",
+        },
+      },
+    ],
   };
   return (
     //
@@ -21,13 +48,11 @@ const CourseTopicCard = ({ categoryData }) => {
       <Slider {...slickSettings}>
         {categoryData.map((data, id) => (
           <div key={id} className="px-1">
-            <div className="bg-white rounded-xl border p-3 px-2 ">
+            <div className="rounded-xl border bg-white p-3 px-2 ">
               <div className="flex flex-row items-center justify-between">
                 <GoDotFill className="min-h-5 min-w-5 text-[#0092A4]" />
 
-                <h5 className="text-nowrap text-sm truncate font-semibold">
-                  {data.categoryName}
-                </h5>
+                <h5 className="text-sm font-semibold">{data.categoryName}</h5>
                 <GoDotFill className="min-h-5 min-w-5 text-[#0092A4]" />
               </div>
             </div>
@@ -42,7 +67,7 @@ CourseTopicCard.propTypes = {
   categoryData: PropTypes.arrayOf(
     PropTypes.shape({
       categoryName: PropTypes.string,
-    })
+    }),
   ),
 };
 

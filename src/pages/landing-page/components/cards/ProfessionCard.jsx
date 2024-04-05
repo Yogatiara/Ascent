@@ -1,14 +1,14 @@
 const ProfessionCard = () => {
   return (
-    <div className="grid grid-rows-2 grid-flow-col text-center  text-md">
-      <div className=" border-[#0092A4] border-b p-2">Software Enginner</div>
-      <div className=" border-[#0092A4] p-2 flex items-center justify-center">
+    <div className="text-md grid grid-flow-col grid-rows-2  text-center ">
+      <div className=" border-b border-[#0092A4] p-2">Software Enginner</div>
+      <div className=" flex items-center justify-center border-[#0092A4] p-2">
         Designer
       </div>
-      <div className="border-[#0092A4] border-l border-b p-2">
+      <div className="border-b border-l border-[#0092A4] p-2">
         Product Manager
       </div>
-      <div className=" border-[#0092A4] border-l p-2 flex items-center justify-center">
+      <div className=" flex items-center justify-center border-l border-[#0092A4] p-2">
         Data Scientist
       </div>
     </div>

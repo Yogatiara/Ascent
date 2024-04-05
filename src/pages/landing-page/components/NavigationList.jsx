@@ -3,12 +3,12 @@ const NavigationList = ({ setDropDown }) => {
   return (
     <ul
       onClick={() => setDropDown(false)}
-      className="flex flex-col p-2     text-base navigation-list  "
+      className="navigation-list flex flex-col p-2  text-base text-black   min-[600px]:flex-row min-[600px]:text-white  "
     >
       <li>
         <a
           href="#aboutUs"
-          className="block py-2 px-3 border-b text-black  hover:text-gray-300 md:hover:bg-transparent md:p-0  "
+          className="block border-b px-3 py-2 hover:text-gray-300  min-[600px]:border-b-0 md:p-0 md:hover:bg-transparent  "
         >
           Tentang kami
         </a>
@@ -16,7 +16,7 @@ const NavigationList = ({ setDropDown }) => {
       <li>
         <a
           href="#service"
-          className="block py-2 px-3 border-b text-black  hover:text-gray-300 md:hover:bg-transparent md:p-0  "
+          className="block border-b px-3 py-2  hover:text-gray-300 min-[600px]:border-b-0 md:p-0 md:hover:bg-transparent  "
         >
           Layanan
         </a>
@@ -24,7 +24,7 @@ const NavigationList = ({ setDropDown }) => {
       <li>
         <a
           href="#contact"
-          className="block py-2 px-3 text-black  hover:text-gray-300 md:hover:bg-transparent  md:p-0  "
+          className="block px-3 py-2  hover:text-gray-300 md:p-0  md:hover:bg-transparent  "
         >
           FAQ
         </a>
