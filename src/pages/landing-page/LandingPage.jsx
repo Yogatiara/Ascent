@@ -76,12 +76,12 @@ const LandingPage = () => {
 
           <Banner toggleModal={() => setOpenModal(true)} />
 
-          <div className="mt-20 space-y-28">
+          <div className="mt-20 space-y-28 min-[850px]:mt-28 min-[850px]:space-y-32">
             <div id="service" className=" justify-center  ">
               <ServiceCard />
             </div>
 
-            <div className="d mx-2 text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9">
+            <div className="d mx-2 text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9 md:mx-16">
               <div className="mb-3 space-y-2  ">
                 <h1 className="text-left text-2xl font-bold min-[600px]:text-3xl ">
                   Kelas Ascent Berbasis Industri
@@ -95,8 +95,8 @@ const LandingPage = () => {
               <CourseCard courseData={courseData} />
             </div>
 
-            <div className="w-screen bg-gray-50 py-6 min-[425px]:py-10 sm:px-10">
-              <h1 className="px-10 pb-5 text-center text-xl font-bold min-[425px]:px-20 min-[425px]:pb-8 min-[600px]:text-3xl ">
+            <div className="w-screen bg-gray-50 py-6 min-[425px]:py-10 sm:px-10  md:px-20">
+              <h1 className="px-10 pb-5 text-center text-xl font-bold min-[425px]:px-20 min-[425px]:pb-8 min-[540px]:px-28 min-[600px]:text-3xl ">
                 Kategori kelas yang dapat dipilih
               </h1>
               {isSmallScreen ? (
@@ -106,46 +106,42 @@ const LandingPage = () => {
               )}
             </div>
             <div>
-              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[600px]:text-3xl">
+              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[540px]:px-20 min-[600px]:text-3xl">
                 Sekilas <span className="italic">TechStack</span> yang akan
                 dipelajari
               </h1>
               <TechStackCard />
             </div>
 
-            <div className="mx-4 min-[375px]:mx-9">
-              <h1 className="mb-5 text-center text-xl font-bold min-[600px]:text-2xl">
+            <div className="mx-4 min-[375px]:mx-9  md:mx-24">
+              <h1 className="mb-10 text-center text-xl font-bold min-[540px]:px-20 min-[600px]:text-2xl">
                 Profesi Yang Bisa Didapatkan Setelah Lulus
               </h1>
               <ProfessionCard />
             </div>
 
             <div>
-              {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path
-                  fill="#0092A4"
-                  fillOpacity="1"
-                  d="M0,32L48,42.7C96,53,192,75,288,122.7C384,171,480,245,576,234.7C672,224,768,128,864,122.7C960,117,1056,203,1152,218.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-                ></path>
-              </svg> */}
               <div className="relative">
-                <div className="bg-[#0092A4] px-3 pb-36 pt-12 text-left text-white min-[375px]:px-6  min-[425px]:px-7 min-[470px]:px-10">
+                <div className="flex flex-col place-content-center items-center gap-4 bg-[#0092A4] px-3   pb-48 pt-12 text-left text-white min-[375px]:px-6 min-[425px]:px-7 min-[470px]:px-10 md:flex-row-reverse md:px-5">
                   <OurPhotosCard />
-                  <div className="min-[600px]:px-8">
+                  <div className="min-[600px]:px-8 md:px-0">
                     <h1 className="my-5 text-2xl font-bold min-[600px]:text-3xl ">
                       Tentang Kami
                     </h1>
                     <p className="text-md ">
-                      Aplikasi "Ascent" – adalah platform inovatif untuk
-                      pembelajaran teknologi digital yang memberikan akses mudah
-                      dan terjangkau. Tujuannya adalah membantu pengguna
+                      Aplikasi &quot;Ascent&quot; - adalah platform inovatif
+                      untuk pembelajaran teknologi digital yang memberikan akses
+                      mudah dan terjangkau. Tujuannya adalah membantu pengguna
                       mengembangkan keterampilan penting dalam dunia industri,
                       meningkatkan pemahaman tentang teknologi digital, dan
                       mencapai kesuksesan karier.
                     </p>
                   </div>
                 </div>
-                <div className="min-[700px]:mx-30 absolute inset-x-4 top-[1010px] min-[365px]:top-[1040px] min-[370px]:top-[1060px] min-[375px]:inset-x-6 min-[418px]:top-[1080px] min-[424px]:top-[1100px] min-[425px]:inset-x-7 min-[439px]:top-[1140px] min-[470px]:inset-x-11 min-[498px]:top-[1150px] min-[500px]:mx-8 min-[512px]:top-[1200px]  min-[540px]:top-[1255px] min-[570px]:top-[1320px]  min-[600px]:top-[1200px] min-[628px]:top-[1250px] min-[630px]:mx-20 sm:top-[1280px] min-[670px]:top-[1340px] min-[700px]:inset-x-8 min-[700px]:top-[1390px] min-[700px]:mx-0">
+                <div
+                  className="min-[700px]:mx-30 absolute inset-x-4 top-[1010px] min-[365px]:top-[1040px] min-[370px]:top-[1060px] min-[375px]:inset-x-6 min-[418px]:top-[1080px] min-[424px]:top-[1100px] min-[425px]:inset-x-7 min-[439px]:top-[1140px] min-[470px]:inset-x-11 min-[498px]:top-[1150px] min-[500px]:mx-8 min-[512px]:top-[1200px]  min-[540px]:top-[1255px] min-[570px]:top-[1320px]  min-[600px]:top-[1200px] min-[628px]:top-[1250px] min-[630px]:mx-20 sm:top-[1280px] min-[670px]:top-[1340px] min-[700px]:inset-x-8 min-[700px]:top-[1390px] min-[700px]:mx-0 min-[730px]:top-[1440px] min-[760px]:top-[1480px] md:top-[780px]
+                "
+                >
                   <DownloadNowCard />
                 </div>
 

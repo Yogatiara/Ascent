@@ -3,7 +3,7 @@ const NavigationList = ({ setDropDown }) => {
   return (
     <ul
       onClick={() => setDropDown(false)}
-      className="navigation-list flex flex-col p-2  text-base text-black   min-[600px]:flex-row min-[600px]:text-white  "
+      className="navigation-list flex flex-col p-2  text-base text-black   min-[600px]:flex-row min-[600px]:text-white md:gap-10 md:text-sm  "
     >
       <li>
         <a

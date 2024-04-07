@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 import "aos/dist/aos.css";
 import { CiMenuFries } from "react-icons/ci";
@@ -30,7 +31,7 @@ const Navbar = ({ setDropDown, dropDown }) => {
     <>
       <nav
         // data-aos="fade-down"
-        className="start-0 top-0 z-10 flex w-screen  flex-wrap items-center justify-between p-3 px-5 py-4 min-[600px]:absolute"
+        className="start-0 top-0 z-10 flex w-screen  flex-wrap items-center justify-between p-3 px-5 py-4 min-[600px]:absolute md:px-8"
       >
         <a
           href=""
@@ -39,23 +40,6 @@ const Navbar = ({ setDropDown, dropDown }) => {
           <img src="./Logo_2.png" className="" alt="TrashIN Logo" />
           {/* <h1 className="text-xl font-bold text-[#0092A4]">Ascent</h1> */}
         </a>
-
-        {/* <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse  p-1 ">
-          <button
-            type="button"
-            onClick={handleClick}
-            className="text-white z-100 animate-pulse
-              bg-[#0092A4] hover:bg-[#004e64ab] focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            <div className="flex items-center space-x-2 text-lg">
-              <div>Hubungi kami</div>
-
-              <img className="w-6" src="../icons/whatsapp.png" alt="" />
-            </div>
-          </button>
-        </div> */}
-
-        {/* {} */}
 
         {isLargeScreen ? (
           <>
@@ -78,6 +62,10 @@ const Navbar = ({ setDropDown, dropDown }) => {
       </nav>
     </>
   );
+};
+Navbar.propTypes = {
+  setDropDown: PropTypes.func.isRequired,
+  dropDown: PropTypes.bool.isRequired,
 };
 
 export default Navbar;
