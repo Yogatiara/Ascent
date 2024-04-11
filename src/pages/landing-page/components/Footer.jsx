@@ -8,8 +8,8 @@ const Footer = () => {
             © 2023-2024 Ascent team. All Rights Reserved.
           </p>
         </div>
-        <div className=" flex flex-col gap-3 text-sm font-thin text-white min-[425px]:text-base min-[700px]:text-sm">
-          <div className="border-b pb-2">
+        <div className=" min-[850px]:text-md flex flex-col gap-3 text-sm font-thin text-white min-[425px]:text-base min-[700px]:text-sm min-[850px]:flex-row">
+          <div className="border-b pb-2 min-[850px]:border-b-0 min-[850px]:border-r min-[850px]:pb-0 min-[850px]:pr-3">
             <p>Ikuti kami dan dapatkan info menarik!</p>
           </div>
           <ul className="flex items-center gap-2">

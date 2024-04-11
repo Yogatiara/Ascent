@@ -81,7 +81,7 @@ const LandingPage = () => {
               <ServiceCard />
             </div>
 
-            <div className="d mx-2 text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9 md:mx-16">
+            <div className="mx-2 flex flex-col justify-center text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9 md:mx-16">
               <div className="mb-3 space-y-2  ">
                 <h1 className="text-left text-2xl font-bold min-[600px]:text-3xl ">
                   Kelas Ascent Berbasis Industri
@@ -106,15 +106,15 @@ const LandingPage = () => {
               )}
             </div>
             <div>
-              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[540px]:px-20 min-[600px]:text-3xl">
+              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[540px]:px-20 min-[600px]:text-3xl min-[770px]:px-28 min-[840px]:px-36 min-[900px]:px-40 lg:px-56">
                 Sekilas <span className="italic">TechStack</span> yang akan
                 dipelajari
               </h1>
               <TechStackCard />
             </div>
 
-            <div className="mx-4 min-[375px]:mx-9  md:mx-24">
-              <h1 className="mb-10 text-center text-xl font-bold min-[540px]:px-20 min-[600px]:text-2xl">
+            <div className="min mx-4   flex-row-reverse  min-[375px]:mx-9 md:mx-24 min-[900px]:flex min-[900px]:gap-6">
+              <h1 className="mb-10 text-center text-xl font-bold min-[540px]:px-20 min-[600px]:text-2xl min-[900px]:px-0 min-[900px]:text-right ">
                 Profesi Yang Bisa Didapatkan Setelah Lulus
               </h1>
               <ProfessionCard />
@@ -122,7 +122,7 @@ const LandingPage = () => {
 
             <div>
               <div className="relative">
-                <div className="flex flex-col place-content-center items-center gap-4 bg-[#0092A4] px-3   pb-48 pt-12 text-left text-white min-[375px]:px-6 min-[425px]:px-7 min-[470px]:px-10 md:flex-row-reverse md:px-5">
+                <div className="flex flex-col place-content-center items-center gap-4 bg-[#0092A4] px-3   pb-48 pt-12 text-left text-white min-[375px]:px-6 min-[425px]:px-7 min-[470px]:px-10 md:flex-row-reverse md:px-5 md:pb-28 min-[900px]:pb-52">
                   <OurPhotosCard />
                   <div className="min-[600px]:px-8 md:px-0">
                     <h1 className="my-5 text-2xl font-bold min-[600px]:text-3xl ">
@@ -138,10 +138,7 @@ const LandingPage = () => {
                     </p>
                   </div>
                 </div>
-                <div
-                  className="min-[700px]:mx-30 absolute inset-x-4 top-[1010px] min-[365px]:top-[1040px] min-[370px]:top-[1060px] min-[375px]:inset-x-6 min-[418px]:top-[1080px] min-[424px]:top-[1100px] min-[425px]:inset-x-7 min-[439px]:top-[1140px] min-[470px]:inset-x-11 min-[498px]:top-[1150px] min-[500px]:mx-8 min-[512px]:top-[1200px]  min-[540px]:top-[1255px] min-[570px]:top-[1320px]  min-[600px]:top-[1200px] min-[628px]:top-[1250px] min-[630px]:mx-20 sm:top-[1280px] min-[670px]:top-[1340px] min-[700px]:inset-x-8 min-[700px]:top-[1390px] min-[700px]:mx-0 min-[730px]:top-[1440px] min-[760px]:top-[1480px] md:top-[780px]
-                "
-                >
+                <div className="min-[700px]:mx-30 absolute inset-x-4 top-[700px]  min-[375px]:inset-x-6  min-[425px]:inset-x-7  min-[470px]:inset-x-11  min-[500px]:mx-8   min-[530px]:top-[750px]   min-[600px]:top-[800px] min-[630px]:mx-20   min-[700px]:inset-x-8 min-[700px]:top-[880px] min-[700px]:mx-0   md:inset-x-16  md:top-[480px]  min-[900px]:top-[550px] lg:inset-x-24">
                   <DownloadNowCard />
                 </div>
 
