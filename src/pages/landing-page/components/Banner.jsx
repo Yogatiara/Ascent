@@ -7,7 +7,7 @@ const Banner = ({ toggleModal }) => {
   return (
     <>
       <div className="relative h-auto w-screen max-[767px]:h-screen md:h-[600px]">
-        <div className="absolute z-10  flex w-full  flex-col items-center  gap-4  px-4 pt-12 min-[375px]:px-6 min-[375px]:pt-16 min-[425px]:px-8  min-[470px]:px-10  min-[600px]:pt-36 md:flex-row md:gap-16 md:px-24 min-[850px]:gap-1 min-[850px]:px-32 min-[858px]:gap-12">
+        <div className="absolute z-10  flex w-full  flex-col items-center  gap-4  px-4 pt-12 min-[375px]:px-6 min-[375px]:pt-16 min-[425px]:px-8  min-[470px]:px-10  min-[600px]:pt-36 md:flex-row md:gap-16 md:px-24 min-[850px]:gap-1 min-[850px]:px-32 min-[858px]:gap-12 min-[1060px]:gap-28 min-[1060px]:px-40">
           <div className="">
             <strong className="  text-5xl font-bold text-white ">Ascent</strong>
             <p className="pt-3 text-left text-base font-normal text-white min-[470px]:text-lg md:text-base min-[850px]:text-lg">

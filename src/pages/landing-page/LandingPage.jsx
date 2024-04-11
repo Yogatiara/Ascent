@@ -81,7 +81,7 @@ const LandingPage = () => {
               <ServiceCard />
             </div>
 
-            <div className="mx-2 flex flex-col justify-center text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9 md:mx-16">
+            <div className="mx-2 flex flex-col justify-center text-left min-[375px]:mx-3.5 min-[425px]:mx-6 min-[600px]:mx-9 md:mx-16 min-[1060px]:mx-8">
               <div className="mb-3 space-y-2  ">
                 <h1 className="text-left text-2xl font-bold min-[600px]:text-3xl ">
                   Kelas Ascent Berbasis Industri
@@ -96,7 +96,7 @@ const LandingPage = () => {
             </div>
 
             <div className="w-screen bg-gray-50 py-6 min-[425px]:py-10 sm:px-10  md:px-20">
-              <h1 className="px-10 pb-5 text-center text-xl font-bold min-[425px]:px-20 min-[425px]:pb-8 min-[540px]:px-28 min-[600px]:text-3xl ">
+              <h1 className="px-10 pb-5 text-center text-xl font-bold min-[425px]:px-20 min-[425px]:pb-8 min-[540px]:px-28 min-[600px]:text-3xl min-[1060px]:px-48">
                 Kategori kelas yang dapat dipilih
               </h1>
               {isSmallScreen ? (
@@ -106,7 +106,7 @@ const LandingPage = () => {
               )}
             </div>
             <div>
-              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[540px]:px-20 min-[600px]:text-3xl min-[770px]:px-28 min-[840px]:px-36 min-[900px]:px-40 lg:px-56">
+              <h1 className="px-5 pb-10 text-center text-xl font-bold min-[425px]:px-16 min-[540px]:px-20 min-[600px]:text-3xl min-[770px]:px-28 min-[840px]:px-36 min-[900px]:px-40 lg:px-56 min-[1060px]:px-64">
                 Sekilas <span className="italic">TechStack</span> yang akan
                 dipelajari
               </h1>
@@ -122,7 +122,7 @@ const LandingPage = () => {
 
             <div>
               <div className="relative">
-                <div className="flex flex-col place-content-center items-center gap-4 bg-[#0092A4] px-3   pb-48 pt-12 text-left text-white min-[375px]:px-6 min-[425px]:px-7 min-[470px]:px-10 md:flex-row-reverse md:px-5 md:pb-28 min-[900px]:pb-52">
+                <div className="flex flex-col place-content-center items-center gap-4 bg-[#0092A4] px-3   pb-48 pt-12 text-left text-white min-[375px]:px-6 min-[425px]:px-7 min-[470px]:px-10 md:flex-row-reverse md:px-5 md:pb-28 min-[900px]:pb-52 min-[1060px]:px-10 min-[1060px]:pb-64 ">
                   <OurPhotosCard />
                   <div className="min-[600px]:px-8 md:px-0">
                     <h1 className="my-5 text-2xl font-bold min-[600px]:text-3xl ">
@@ -138,7 +138,7 @@ const LandingPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="min-[700px]:mx-30 absolute inset-x-4 top-[700px]  min-[375px]:inset-x-6  min-[425px]:inset-x-7  min-[470px]:inset-x-11  min-[500px]:mx-8   min-[530px]:top-[750px]   min-[600px]:top-[800px] min-[630px]:mx-20   min-[700px]:inset-x-8 min-[700px]:top-[880px] min-[700px]:mx-0   md:inset-x-16  md:top-[480px]  min-[900px]:top-[550px] lg:inset-x-24">
+                <div className="min-[700px]:mx-30 absolute inset-x-4 top-[700px]  min-[375px]:inset-x-6  min-[425px]:inset-x-7  min-[470px]:inset-x-11  min-[500px]:mx-8   min-[530px]:top-[750px]   min-[600px]:top-[800px] min-[630px]:mx-20   min-[700px]:inset-x-8 min-[700px]:top-[880px] min-[700px]:mx-0   md:inset-x-16  md:top-[480px]  min-[900px]:top-[550px] lg:inset-x-24 min-[1060px]:top-[600px]">
                   <DownloadNowCard />
                 </div>
 
@@ -152,7 +152,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="mx-3 mt-96 space-y-8 pb-24 min-[375px]:mx-6 min-[470px]:mx-10 min-[700px]:mt-52">
+          <div className="mx-3 mt-96 space-y-8 pb-24 min-[375px]:mx-6 min-[470px]:mx-10 min-[700px]:mt-52 min-[1060px]:mx-28">
             <h1 className="text-center text-2xl font-semibold min-[425px]:px-10 min-[600px]:text-3xl ">
               Frequently Asked Question
             </h1>
