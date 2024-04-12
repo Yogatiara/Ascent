@@ -12,7 +12,7 @@ export default function DownloadNowCard() {
       </div>
 
       <div className="space-y-6">
-        <h1 className="lg:text-md">
+        <h1 className="lg:text-md min-[1440px]:text-lg">
           Download Ascent sekarang dan rasakan pengalaman belajar online yang
           lebih efektif dan menyenangkan!
         </h1>

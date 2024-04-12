@@ -28,39 +28,37 @@ const Navbar = ({ setDropDown, dropDown }) => {
   }, []);
 
   return (
-    <>
-      <nav
-        // data-aos="fade-down"
-        className="start-0 top-0 z-10 flex w-screen  flex-wrap items-center justify-between p-3 px-5 py-4 min-[600px]:absolute md:px-8"
+    <nav
+      // data-aos="fade-down"
+      className="start-0 top-0 z-10 flex w-full  flex-wrap items-center justify-between p-3 px-5 py-4 min-[600px]:absolute md:px-8"
+    >
+      <a
+        href=""
+        className="min-[600px]:h-13 min-[600px]:w-13 flex h-10 w-10  items-center  space-x-1  min-[425px]:h-14 min-[425px]:w-14 min-[1440px]:h-16 min-[1440px]:w-16"
       >
-        <a
-          href=""
-          className="min-[600px]:h-13 min-[600px]:w-13 flex h-10 w-10  items-center  space-x-1  min-[425px]:h-14 min-[425px]:w-14"
-        >
-          <img src="./Logo_2.png" className="" alt="TrashIN Logo" />
-          {/* <h1 className="text-xl font-bold text-[#0092A4]">Ascent</h1> */}
-        </a>
+        <img src="./Logo_2.png" className="" alt="TrashIN Logo" />
+        {/* <h1 className="text-xl font-bold text-[#0092A4]">Ascent</h1> */}
+      </a>
 
-        {isLargeScreen ? (
-          <>
-            <div>
-              <NavigationList />
-            </div>
-            <div>
-              <DownloadButton scale={"sm"} />
-            </div>
-          </>
-        ) : dropDown ? (
-          <button onClick={() => setDropDown(false)}>
-            <IoIosClose className="h-6 w-6 text-gray-500 " />
-          </button>
-        ) : (
-          <button type="button" onClick={() => setDropDown(true)}>
-            <CiMenuFries className="h-5 w-5 " />
-          </button>
-        )}
-      </nav>
-    </>
+      {isLargeScreen ? (
+        <>
+          <div>
+            <NavigationList />
+          </div>
+          <div>
+            <DownloadButton scale={"sm"} />
+          </div>
+        </>
+      ) : dropDown ? (
+        <button onClick={() => setDropDown(false)}>
+          <IoIosClose className="h-6 w-6 text-gray-500 " />
+        </button>
+      ) : (
+        <button type="button" onClick={() => setDropDown(true)}>
+          <CiMenuFries className="h-5 w-5 " />
+        </button>
+      )}
+    </nav>
   );
 };
 Navbar.propTypes = {

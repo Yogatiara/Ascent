@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       {/* <div></div> */}
-      <footer className=" max-w-screen flex w-full flex-col justify-between gap-4 bg-[#0092A4] p-3 min-[700px]:flex-row">
+      <footer className="  mt-auto  flex flex-col justify-between gap-4 bg-[#0092A4] p-3 min-[700px]:flex-row">
         <div>
           <p className=" text-sm font-thin text-white min-[365px]:text-base min-[425px]:text-base">
             © 2023-2024 Ascent team. All Rights Reserved.

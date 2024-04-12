@@ -19,7 +19,7 @@ const VideoModal = ({ openModal, setOpenModal }) => {
             </div>
 
             <div className="flex h-full  w-full flex-col justify-center ">
-              <div className="h-48 min-[425px]:h-60 min-[500px]:h-72 min-[630px]:h-2/3">
+              <div className="h-48 min-[425px]:h-60 min-[500px]:h-72 min-[630px]:h-2/3 lg:h-5/6">
                 <ReactPlayer
                   className="react-player "
                   url={"http://www.youtube.com/watch?v=ixOd42SEUF0"}
