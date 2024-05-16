@@ -6,7 +6,7 @@ import { FaBook } from "react-icons/fa";
 const CourseCard = ({ courseData }) => {
   return (
     <>
-      <div className="flex gap-2 overflow-x-auto min-[375px]:gap-4">
+      <div className="flex grid-cols-4 items-center gap-2 overflow-x-auto min-[375px]:gap-4 min-[1670px]:grid ">
         {courseData.slice(2, 6).map((data, index) => (
           <div key={index} className="w-80 min-w-72 min-[375px]:min-w-96">
             <div className="h-60  min-[425px]:h-72 ">

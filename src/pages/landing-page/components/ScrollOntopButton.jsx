@@ -5,8 +5,8 @@ const ScrollOnTopButton = ({ ScrollToTop }) => {
       <ScrollToTop
         smooth
         top={20}
-        height="20"
-        className="pl-1.5 rounded-full shadow-2xl"
+        height="30"
+        className="rounded-2xl pl-1.5 shadow-2xl"
       />
     </>
   );

@@ -6,10 +6,10 @@ import "aos/dist/aos.css";
 const Banner = ({ toggleModal }) => {
   return (
     <>
-      <div className="relative h-auto w-full max-[767px]:h-screen md:h-[600px] min-[1180px]:h-[660px] min-[1250px]:h-[700px]">
-        <div className="absolute z-10  flex w-full  flex-col items-center justify-center  gap-4  px-4 pt-12 min-[375px]:px-6 min-[375px]:pt-16 min-[425px]:px-8  min-[470px]:px-10  min-[600px]:pt-36 md:flex-row md:gap-16 md:px-24 min-[850px]:gap-1 min-[850px]:px-32 min-[858px]:gap-12  min-[1060px]:px-40 min-[1104px]:px-44 min-[1180px]:px-60 min-[1180px]:pt-48 min-[1250px]:px-56 min-[1250px]:pt-52 xl:px-64  min-[1440px]:gap-16 min-[1440px]:px-72">
-          <div className="md:border-r md:pr-8 min-[1136px]:pr-28 min-[1440px]:pr-10">
-            <strong className="  text-5xl font-bold text-white min-[1440px]:font-extrabold">
+      <div className="relative h-auto w-full max-[767px]:h-screen md:h-[600px] min-[1180px]:h-[660px] min-[1250px]:h-[700px] 2xl:h-[750px]  min-[1880px]:h-[850px]">
+        <div className="absolute z-10  flex w-full  flex-col items-center justify-center  gap-4  px-4 pt-12 min-[375px]:px-6 min-[375px]:pt-16 min-[425px]:px-8  min-[470px]:px-10  min-[600px]:pt-36 md:flex-row md:gap-16 md:px-24 min-[850px]:gap-1 min-[850px]:px-32 min-[858px]:gap-12  min-[1060px]:px-40 min-[1104px]:px-44 min-[1180px]:px-60 min-[1180px]:pt-48 min-[1250px]:px-56 min-[1250px]:pt-52 xl:px-64  min-[1440px]:gap-16 min-[1440px]:px-72 min-[1500px]:px-80 2xl:px-80 2xl:pt-56 min-[1670px]:px-96 min-[1820px]:px-[450px] min-[1880px]:px-[500px]  min-[1880px]:pt-60">
+          <div className="md:border-r md:pr-8 min-[1136px]:pr-28 min-[1440px]:pr-10 min-[1592px]:pr-16">
+            <strong className="  text-5xl font-bold text-white min-[1440px]:font-extrabold min-[1820px]:text-6xl">
               Ascent
             </strong>
             <p className="pt-3 text-left text-base font-normal text-white min-[470px]:text-lg md:text-base min-[850px]:text-lg min-[1440px]:text-xl">

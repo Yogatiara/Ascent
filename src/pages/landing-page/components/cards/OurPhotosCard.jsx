@@ -1,6 +1,6 @@
 const OurPhotosCard = () => {
   return (
-    <div className="grid  grid-cols-3 gap-2.5 min-[600px]:gap-4  min-[600px]:px-10 md:h-[350px] md:w-[2800px] md:px-0 ">
+    <>
       <div className="grid  gap-2.5 min-[600px]:gap-4 ">
         <div>
           <img
@@ -42,7 +42,7 @@ const OurPhotosCard = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

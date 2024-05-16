@@ -20,8 +20,8 @@ const TechStackCard = () => {
   }, []);
   return (
     <>
-      <div className="inline-flex w-full gap-10 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-        <ul className=" animate-infinite-scroll flex items-center justify-center gap-10 md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+      <div className="inline-flex w-full gap-10 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] ">
+        <ul className=" flex animate-infinite-scroll items-center justify-center gap-10 md:justify-start [&_img]:max-w-none [&_li]:mx-8">
           <li>
             <img className="w-48" src="./icons/nodejs.png" alt="" />
           </li>
@@ -40,7 +40,26 @@ const TechStackCard = () => {
             <img className="w-28 sm:w-36" src="./icons/react.png" alt="" />
           </li>
         </ul>
-        <ul className="animate-infinite-scroll flex items-center justify-center gap-10 md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+        <ul className="flex animate-infinite-scroll items-center justify-center gap-10 md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+          <li>
+            <img className="w-48 " src="./icons/nodejs.png" alt="" />
+          </li>
+          <li>
+            <img className="w-64 " src="./icons/pandas.png" alt="" />
+          </li>
+
+          <li>
+            <img className="w-64 sm:w-72 " src="./icons/plotly.png" alt="" />
+          </li>
+
+          <li>
+            <img className="w-64" src="./icons/postgre.png" alt="" />
+          </li>
+          <li>
+            <img className="w-28 sm:w-36" src="./icons/react.png" alt="" />
+          </li>
+        </ul>
+        <ul className="flex animate-infinite-scroll items-center justify-center gap-10 md:justify-start [&_img]:max-w-none [&_li]:mx-8">
           <li>
             <img className="w-48 " src="./icons/nodejs.png" alt="" />
           </li>
