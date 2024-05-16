@@ -67,7 +67,7 @@ const LandingPage = () => {
       ) : (
         <>
           <div className=" font-montserrat">
-            <div className="absolute z-20">
+            <div className="absolute z-40">
               <VideoModal
                 setOpenModal={() => setOpenModal(false)}
                 openModal={openModal}

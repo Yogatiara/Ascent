@@ -1,13 +1,14 @@
 import ReactPlayer from "react-player/youtube";
 import { IoIosClose } from "react-icons/io";
 import { RemoveScroll } from "react-remove-scroll";
+import PropTypes from "prop-types";
 
 const VideoModal = ({ openModal, setOpenModal }) => {
   return (
     <>
       {openModal && (
         <RemoveScroll>
-          <div className="fixed h-full w-screen  overscroll-y-none bg-slate-800 py-3	">
+          <div className="fixed  h-full  w-screen overscroll-y-none bg-slate-800	py-3">
             <div className="flex flex-row justify-end pr-3 ">
               <button
                 onClick={setOpenModal}
@@ -33,6 +34,10 @@ const VideoModal = ({ openModal, setOpenModal }) => {
       )}
     </>
   );
+};
+VideoModal.propTypes = {
+  openModal: PropTypes.bool.isRequired,
+  setOpenModal: PropTypes.func.isRequired,
 };
 
 export default VideoModal;
